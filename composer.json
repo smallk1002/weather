@@ -1,0 +1,22 @@
+{
+  "name": "smallk/weather",
+  "description": "A weather",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Smallk\\Weather\\": "./src/"
+    }
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^6.3",
+    "phpunit/phpunit": "^7.5",
+    "mockery/mockery": "^1.2"
+  },
+  "extra": {
+    "laravel": {
+      "providers":[
+        "Smallk\\Weather\\ServiceProvider"
+      ]
+    }
+  }
+}
